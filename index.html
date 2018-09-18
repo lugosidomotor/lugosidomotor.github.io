@@ -1,13 +1,152 @@
 <!DOCTYPE html>
 <html>
-<body>
+<title>Green Fox AI Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body class="w3-light-grey">
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fas fa-robot w3-margin-right"></i>Green Fox AI LAB </b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="https://imgur.com/mbz46y2.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-bicycle w3-margin-right"></i>Predikció megadott adatok alapján</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bicycle w3-margin-right"></i>15 napos előrejelzés</button>
+    </div>
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Kérem adja meg az alábbi adatokat:</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-half">
+          <label>PRCP</label>
+          <input class="w3-input w3-border" type="text" placeholder="****">
+        </div>
+        <div class="w3-half">
+          <label>SNOW</label>
+          <input class="w3-input w3-border" type="text" placeholder="****">
+        </div>
+        <div class="w3-half">
+          <label>TMIN</label>
+          <input class="w3-input w3-border" type="text" placeholder="****">
+        </div>
+        <div class="w3-half">
+          <label>TMAX</label>
+          <input class="w3-input w3-border" type="text" placeholder="****">
+        </div>
+      </div>
+      <p><button class="w3-button w3-dark-grey">Kalkuláció</button></p>
+    </div>
 
-<h1>Működik!</h1>
-<h2>Működik!</h2>
-<h3>Működik!</h3>
-<h4>Működik!</h4>
-<h5>Működik!</h5>
-<h6>Működik!</h6>
 
+    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>15 napos előrejelzés a AccuWeather adatai alapján</h3>
+      <p>A predikció kalulációja automatikus. Az eredményekért görgess lejjebb!</p>
+    </div>
+
+  </div>
+</header>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+  <!-- Explore Nature -->
+  <div class="w3-container">
+    <h3>Eredmények</h3>
+    <p>A különböző modellek validációjára nem maradt időnk, így egyszerűen csak megmutatjuk a különböző modelleken átfuttatok adatok eredményeit.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <img src="https://imgur.com/YBf7u4H.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Neurális hálóval</h3>
+        <p class="w3-opacity">valami</p>
+        <ul style="list-style-type:disc">
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <img src="https://imgur.com/xTznAPT.jpg" alt="Austria" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Döntési fával</h3>
+        <p class="w3-opacity">valami</p>
+        <ul style="list-style-type:disc">
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <img src="https://imgur.com/q6Sucop.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>SVC-vel</h3>
+        <p class="w3-opacity">valami</p>
+        <ul style="list-style-type:disc">
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <img src="https://imgur.com/q6Sucop.jpg" alt="Austria" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Tököm tudja mivel</h3>
+        <p class="w3-opacity">valami</p>
+        <ul style="list-style-type:disc">
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  </div>
+  <p>Powered by <a>Döme</a></p>
+</footer>
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
 </body>
 </html>
